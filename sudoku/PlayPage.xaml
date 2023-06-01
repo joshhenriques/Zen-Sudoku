@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="sudoku.PlayPage"
+             Title="PlayPage">
+    
+    <Grid x:Name="MainBoard" Margin="70" HorizontalOptions="CenterAndExpand">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50" />
+            <ColumnDefinition Width="50" />
+            <ColumnDefinition Width="50" />
+            <ColumnDefinition Width="50" />
+            <ColumnDefinition Width="50" />
+            <ColumnDefinition Width="50" />
+            <ColumnDefinition Width="50" />
+            <ColumnDefinition Width="50" />
+            <ColumnDefinition Width="50" />
+            <ColumnDefinition Width="50" />
+            <ColumnDefinition Width="50" />
+            <ColumnDefinition Width="50" />
+            <ColumnDefinition Width="50" />
+            <ColumnDefinition Width="50" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+
+        
+        <Label x:Name="Timer" Grid.Row ="1" Grid.Column="10" Grid.ColumnSpan="3" Text="00:00:00" BackgroundColor="White"/>
+
+        <Button x:Name="OneBtn" Grid.Column="0" Grid.Row="10" Text="1" FontSize="Large" Margin ="1.2" Clicked="OnNumBtnClicked"/>
+        <Button x:Name="TwoBtn" Grid.Column="1" Grid.Row="10" Text="2" FontSize="Large"  Margin ="1.2" Clicked="OnNumBtnClicked"/>
+        <Button x:Name="ThreeBtn" Grid.Column="2" Grid.Row="10" Text="3" FontSize="Large"  Margin ="1.2" Clicked="OnNumBtnClicked"/>
+        <Button x:Name="FourBtn" Grid.Column="3" Grid.Row="10" Text="4" FontSize="Large"  Margin ="1.2" Clicked="OnNumBtnClicked"/>
+        <Button x:Name="FiveBtn" Grid.Column="4" Grid.Row="10" Text="5" FontSize="Large"  Margin ="1.2" Clicked="OnNumBtnClicked"/>
+        <Button x:Name="SixBtn" Grid.Column="5" Grid.Row="10" Text="6" FontSize="Large"  Margin ="1.2" Clicked="OnNumBtnClicked"/>
+        <Button x:Name="SevenBtn" Grid.Column="6" Grid.Row="10" Text="7" FontSize="Large" Margin ="1.2" Clicked="OnNumBtnClicked"/>
+        <Button x:Name="EightBtn" Grid.Column="7" Grid.Row="10" Text="8" FontSize="Large"  Margin ="1.2" Clicked="OnNumBtnClicked"/>
+        <Button x:Name="NineBtn" Grid.Column="8" Grid.Row="10" Text="9" FontSize="Large"  Margin ="1.2" Clicked="OnNumBtnClicked"/>
+        <Button x:Name="UndoBtn" Grid.ColumnSpan ="2" Grid.Column="10" Grid.Row="10" Text="UNDO" FontSize="Medium"  Margin ="1.2" Clicked="OnUndoBtnClicked"/>
+        <Button x:Name="PlayAgainBtn" Grid.ColumnSpan ="3" Grid.Column="10" Grid.Row="10" Text="Play Again" FontSize="Medium"  Margin ="1.2" Clicked="OnPlayAgainBtnClicked" IsVisible="false"/>
+
+    </Grid>
+</ContentPage>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="sudoku.DifficultyPage"
+             Title="DifficultyPage">
+    
+    <Grid x:Name="MyGrid" Margin="100" HorizontalOptions="CenterAndExpand">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50" />
+            <ColumnDefinition Width="50" />
+            <ColumnDefinition Width="50" />
+            <ColumnDefinition Width="50" />
+            <ColumnDefinition Width="50" />
+            <ColumnDefinition Width="50" />
+            <ColumnDefinition Width="50" />
+            <ColumnDefinition Width="50" />
+            <ColumnDefinition Width="50" />
+            <ColumnDefinition Width="50" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="75"/>
+        </Grid.RowDefinitions>
+
+        <Label Text="Choose Difficulty" Grid.Column ="2" Grid.Row="1" Grid.ColumnSpan="5" TextColor ="FloralWhite" BackgroundColor="Transparent"/>
+
+        <Button 
+        x:Name="easyBtn"
+        Grid.Row="3"
+        Grid.ColumnSpan="3"
+        Grid.Column ="3"
+        Clicked="EasyBtnClicked" 
+        Text="Easy"
+        />
+
+        <Button 
+        x:Name="medBtn"
+        Grid.Row="5"
+        Grid.ColumnSpan="3"
+        Grid.Column ="3"
+        Clicked="MedBtnClicked" 
+        Text="Medium"
+        />
+
+        <Button 
+        x:Name="hardBtn"
+        Grid.Row="7"
+        Grid.ColumnSpan="3"
+        Grid.Column ="3"
+        Clicked="HardBtnClicked" 
+        Text="Hard"
+        />
+
+    </Grid>
+</ContentPage>
